@@ -301,13 +301,15 @@
 		</footer>
 		<!-- End Footer -->
 		<script>
+			
 			const burgerMenu = document.querySelector(".burger-menu");
 			const navMenu = document.querySelector("ul.nav-links");
 
 			burgerMenu.addEventListener("click", () => {
 				burgerMenu.classList.toggle("active");
 				navMenu.classList.toggle("collapse");
-			});
+			});alert(window.matchmedia('(prefers-color-scheme dark)').matches)
+
 		</script>
 		<!--Start of Tawk.to Script-->
 <script type="text/javascript">
