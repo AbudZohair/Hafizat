@@ -1,1 +1,1 @@
-let sdsd = 22
+alert(window.matchmedia('(prefers-color-scheme dark)').matches) 
