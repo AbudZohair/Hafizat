@@ -13,9 +13,9 @@
 					<div class="nav-bar-content">
 						<a href="#" class="brand-name">HAFIZT</a>
 						<ul class="nav-links">
-							<li><a href="#" class="nav-link">Courses</a></li>
+							<li><a href="#choose" class="nav-link">Courses</a></li>
 							<li><a href="#" class="nav-link">Our plans</a></li>
-							<li><a href="#" class="nav-link">Contact us</a></li>
+							<li><a href="#" id="contactUs" class="nav-link">Contact us</a></li>
 							<div class="social">
 								<div class="formal">
 									<a href="tel:+201022665934">+2010-2266-5934</a>
@@ -57,7 +57,7 @@
 							</div>
 						</ul>
 						<div class="nav-right">
-							<a href="#" class="btn reques-trial">Reques a trial</a>
+							<a href="#" id="requestTrial" class="btn reques-trial">Request a trial</a>
 							<div class="burger-menu">
 								<div class="bars"></div>
 								<div class="bars"></div>
@@ -74,7 +74,7 @@
 					<div class="header-content">
 						<h1 class="h1">Build a career you love</h1>
 						<h4 class="h4">Become a UX designer, UI designer, web developer, or data analyst from scratch</h4>
-						<a href="#" id="choose-course" class="btn choose-course">Find the right course for you</a>
+						<a href="#choose" id="choose-course" class="btn choose-course">Find the right course for you</a>
 					</div>
 				</div>
 			</div>
@@ -148,12 +148,12 @@
 					<div class="grid-card">
 						<h3>Try our free short Trial</h3>
 						<p>Start sketching wireframes, designing user interfaces, or coding a website to discover which field suits you best.</p>
-						<a href="#" class="btn">Request a trial Now ></a>
+						<a href="#" id="request-trial-now" class="btn">Request a trial Now ></a>
 					</div>
 					<div class="grid-card">
 						<h3>Get in touch with an Advisor today</h3>
 						<p>Discuss your background and interests with one of our expert career advisors—they’ll help you figure out if a CareerFoundry program is right for you.</p>
-						<a href="#" class="btn">Contact your Advisor></a>
+						<a href="#" class="btn" id="contact-advisor">Contact your Advisor></a>
 					</div>
 				</div>
 			</div>
@@ -234,6 +234,110 @@
 			</div>
 		</section>
 		<!-- End Why Hafizat -->
+		<!-- our Plans -->
+<section class="plans py-50" id="plans">
+	<div class="container">
+		<h3 class="h3">Our Plans</h3>
+		<div class="cards">
+			<div class="card">
+				<div class="card__title">
+					<p>Tight on time</p>
+				</div>
+				<div class="card__details">
+					<ul>
+						<li><span class="card--bold">1 class per </span>Week</li>
+					</ul>
+				</div>
+				<div class="card__price">
+					<h4>$37</h4>
+					<span class="card--bold">/per Month</span>
+				</div>
+				<div class="card__subscribe">
+					<button class="btn card__btn">
+						subscribe
+					</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__title">
+					<p>Bit by Bit</p>
+				</div>
+				<div class="card__details">
+					<ul>
+						<li><span class="card--bold">2 classes per </span>Week</li>
+					</ul>
+				</div>
+				<div class="card__price">
+					<h4>$65</h4>
+					<span class="card--bold">/per Month</span>
+				</div>
+				<div class="card__subscribe">
+					<button class="btn card__btn">
+						subscribe
+					</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__title">
+					<p>Steady that works</p>
+				</div>
+				<div class="card__details">
+					<ul>
+						<li><span class="card--bold">3 class per </span>Week</li>
+					</ul>
+				</div>
+				<div class="card__price">
+					<h4>$80</h4>
+					<span class="card--bold">/per Month</span>
+				</div>
+				<div class="card__subscribe">
+					<button class="btn card__btn">
+						subscribe
+					</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__title">
+					<p>Commited to success</p>
+				</div>
+				<div class="card__details">
+					<ul>
+						<li><span class="card--bold">4 class per </span>Week</li>
+					</ul>
+				</div>
+				<div class="card__price">
+					<h4>$100</h4>
+					<span class="card--bold">/per Month</span>
+				</div>
+				<div class="card__subscribe">
+					<button class="btn card__btn">
+						subscribe
+					</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__title">
+					<p>Hafiza in the making</p>
+				</div>
+				<div class="card__details">
+					<ul>
+						<li><span class="card--bold">5 class per </span>Week</li>
+					</ul>
+				</div>
+				<div class="card__price">
+					<h4>$120</h4>
+					<span class="card--bold">/per Month</span>
+				</div>
+				<div class="card__subscribe">
+					<button class="btn card__btn">
+						subscribe
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		<!-- End our Plans -->
 
 		<!-- Start Footer -->
 		<footer>
@@ -300,27 +404,7 @@
 			</div>
 		</footer>
 		<!-- End Footer -->
-		<script>
-			const burgerMenu = document.querySelector(".burger-menu");
-			const navMenu = document.querySelector("ul.nav-links");
-
-			burgerMenu.addEventListener("click", () => {
-				burgerMenu.classList.toggle("active");
-				navMenu.classList.toggle("collapse");
-			});
-		</script>
-		<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5e981a2769e9320caac41b80/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+		
+<script src="main.js"></script>
 	</body>
 </html>
