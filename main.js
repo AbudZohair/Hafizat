@@ -6,30 +6,33 @@ burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("active");
   navMenu.classList.toggle("collapse");
 });
+
 window.addEventListener("load", () => {
-  const chat = document.querySelector(".icon-mail");
-});
-const requestTrials = document.querySelector("#requestTrial");
-const contactNavLink = document.querySelector("#contactUs");
-const requestTrialNow = document.querySelector("#request-trial-now");
-const contactAdvisor = document.querySelector("#contact-advisor");
+  const chatIframe = document.querySelectorAll("iframe")[1];
+  const chat = chatIframe.contentDocument.querySelector("span");
 
-contactAdvisor.addEventListener("click", (e) => {
-  e.preventDefault();
-  chat.click();
-});
+  const requestTrials = document.querySelector("#requestTrial");
+  const contactNavLink = document.querySelector("#contactUs");
+  const requestTrialNow = document.querySelector("#request-trial-now");
+  const contactAdvisor = document.querySelector("#contact-advisor");
 
-contactNavLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  chat.click();
-});
+  contactAdvisor.addEventListener("click", (e) => {
+    e.preventDefault();
+    chat.click();
+  });
 
-requestTrials.addEventListener("click", (e) => {
-  e.preventDefault();
-  chat.click();
-});
+  contactNavLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    chat.click();
+  });
 
-requestTrialNow.addEventListener("click", (e) => {
-  e.preventDefault();
-  chat.clik();
+  requestTrials.addEventListener("click", (e) => {
+    e.preventDefault();
+    chat.click();
+  });
+
+  requestTrialNow.addEventListener("click", (e) => {
+    e.preventDefault();
+    chat.click();
+  });
 });
