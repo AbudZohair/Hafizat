@@ -8,7 +8,7 @@ burgerMenu.addEventListener("click", () => {
 });
 
 const requestTrials = document.querySelector("#requestTrial");
-const chat = document.querySelector("#maximizeChat");
+const chat = document.querySelector("#minimizeChatMinifiedBtn");
 const contactNavLink = document.querySelector("#contactUs");
 const requestTrialNow = document.querySelector("#request-trial-now");
 const contactAdvisor = document.querySelector("#contact-advisor");
