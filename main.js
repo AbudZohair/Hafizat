@@ -6,9 +6,10 @@ burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("active");
   navMenu.classList.toggle("collapse");
 });
-
+window.addEventListener("load", () => {
+  const chat = document.querySelector(".icon-mail");
+});
 const requestTrials = document.querySelector("#requestTrial");
-const chat = document.querySelector("#minimizeChatMinifiedBtn");
 const contactNavLink = document.querySelector("#contactUs");
 const requestTrialNow = document.querySelector("#request-trial-now");
 const contactAdvisor = document.querySelector("#contact-advisor");
