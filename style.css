@@ -443,7 +443,7 @@ section.how {
 /* Why Hafizt */
 
 .reasons {
-  padding: 100px 0;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

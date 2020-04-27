@@ -14,12 +14,6 @@ window.addEventListener("load", () => {
   const requestTrials = document.querySelector("#requestTrial");
   const contactNavLink = document.querySelector("#contactUs");
   const requestTrialNow = document.querySelector("#request-trial-now");
-  const contactAdvisor = document.querySelector("#contact-advisor");
-
-  contactAdvisor.addEventListener("click", (e) => {
-    e.preventDefault();
-    chat.click();
-  });
 
   contactNavLink.addEventListener("click", (e) => {
     e.preventDefault();
