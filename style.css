@@ -207,6 +207,13 @@ header {
   display: flex;
 }
 
+.header__image {
+  width: 100%;
+  height: 100%;
+}
+.header__image img {
+  max-width: 100%;
+}
 .header-content {
   color: #fff;
   max-width: 500px;
@@ -433,20 +440,44 @@ section.how {
 }
 
 /* Why Hafizt */
+
 .reasons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 1.5rem;
-  grid-gap: 20px;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .reason {
-  text-align: center;
   padding: 1.3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.reason > * {
-  margin-bottom: 16px;
+.reason__content {
+  max-width: 600px;
+}
+.reason__content h4 {
+  font-size: 2.3rem;
+}
+.reason__content p {
+  font-size: 1rem;
+}
+.reason__img {
+  min-width: 300px;
+  min-height: 300px;
+  background: #eff1f3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.reason__img.reason__img--right {
+  margin-right: 0;
+  margin-left: 100px;
 }
 /* Plan cards */
 .plans {
@@ -684,7 +715,6 @@ form input[type="submit"] {
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
-    border: 2px solid #000;
   }
 
   .features {
@@ -717,6 +747,25 @@ form input[type="submit"] {
   .reason {
     box-shadow: 0 16px 24px 0 rgba(34, 60, 80, 0.15);
     border-radius: 5px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .reason-reversed {
+    flex-direction: column-reverse;
+  }
+  .reason__content {
+    max-width: 400px;
+    padding: 18px 0;
+  }
+  .reason__img,
+  .reason__img.reason__img--right {
+    margin: 0;
+    min-width: 240px;
+    min-height: 240px;
+  }
+  .reason__content h4 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
   }
 
   .contact-form {
