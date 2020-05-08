@@ -14,6 +14,7 @@ window.addEventListener("load", () => {
   const requestTrials = document.querySelector("#requestTrial");
   const contactNavLink = document.querySelector("#contactUs");
   const requestTrialNow = document.querySelector("#request-trial-now");
+  const joinNow = document.querySelector("#join-now");
 
   contactNavLink.addEventListener("click", (e) => {
     e.preventDefault();
@@ -21,6 +22,10 @@ window.addEventListener("load", () => {
   });
 
   requestTrials.addEventListener("click", (e) => {
+    e.preventDefault();
+    chat.click();
+  });
+  joinNow.addEventListener("click", (e) => {
     e.preventDefault();
     chat.click();
   });

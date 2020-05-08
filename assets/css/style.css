@@ -9,12 +9,9 @@ header {
   position: relative;
   height: 80vh;
   overflow: hidden;
-  background: radial-gradient(
-    closest-side at 33% 38%,
-    var(--dark-color),
-    var(--main-color)
-  );
+
   background: url("../images/Header.jpg") no-repeat center center/cover;
+  background-color: var(--dark-color);
 }
 
 .header-content-wrapper {
@@ -25,10 +22,13 @@ header {
   display: flex;
   flex-direction: column;
   width: 40%;
-  transform: translateY(10%);
+  transform: translateY(50%);
+  text-transform: capitalize;
+  text-align: center;
 }
 .header-content h4 {
   padding: 12px 0;
+  margin-bottom: 30px;
 }
 .header__image {
   width: 70%;
@@ -39,7 +39,7 @@ header {
 }
 .header-content {
   color: #fff;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .header-content > * {
@@ -310,7 +310,6 @@ section.how {
   width: 300px;
   height: 300px;
   display: block;
-  border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s 0s ease-in;
 }
@@ -402,10 +401,10 @@ footer .container {
 }
 
 .footer-photo img {
-  max-width: 100%;
+  width: 100px;
   object-fit: cover;
+  position: relative;
 }
-
 .courses-links {
   flex: 1;
   padding: 0 25px;
@@ -503,6 +502,9 @@ form input[type="submit"] {
   .header-content-wrapper {
     transform: translateY(50%);
     justify-content: flex-start;
+  }
+  .header-content {
+    transform: translateY(18%);
   }
   .header__text {
     width: 350px;

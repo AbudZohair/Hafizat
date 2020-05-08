@@ -36,6 +36,53 @@ header {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/* Start what section */
+
+.what {
+  max-width: 800px;
+  margin: auto;
+}
+.what__header {
+  text-align: center;
+}
+.what__header h2 {
+  padding: 12px 0;
+}
+.what__header h3 {
+  text-decoration: underline;
+  font-size: 20px;
+}
+.what__content {
+  padding: 20px 0;
+}
+
+.what__goal {
+  margin: 50px 0;
+}
+.what__goal h4 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.what__goal p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.what__join {
+  text-align: center;
+}
+
+.what__join .btn {
+  background: var(--dark-color);
+  font-size: 20px;
+  padding: 18px 30px;
+}
+.what__join .btn:hover {
+  color: var(--golden-color);
+  opacity: 1;
+  transform: scale(1.3);
+}
 @media (max-width: 850px) {
   /* Header */
   .header__content {
