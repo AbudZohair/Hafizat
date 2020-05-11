@@ -548,7 +548,7 @@ form input[type="submit"] {
   .courses-grid {
     width: 100%;
     margin: 0 auto;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 400px; */
     justify-content: center;
   }
   .courses-grid::before {
@@ -612,8 +612,16 @@ form input[type="submit"] {
   }
 }
 
+@media (max-width: 770px) {
+  .courses-grid {
+    grid-template-columns: 340px;
+  }
+}
 @media (max-width: 370px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .courses-grid {
+    grid-template-columns: 300px;
   }
 }
