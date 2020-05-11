@@ -23,16 +23,21 @@
 }
 
 .brand-name {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
   transition: all 0.3s;
-}
-.logo-pic {
-  width: 30px;
   margin-right: 10px;
+}
+.brand-name svg {
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s;
 }
 .brand-name:hover {
   color: var(--golden-color);
+}
+.brand-name:hover svg {
+  fill: var(--golden-color);
 }
 
 ul.nav-links {
