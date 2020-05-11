@@ -114,6 +114,7 @@ header {
   grid-gap: 20px;
   width: 80%;
   position: relative;
+  z-index: 1;
 }
 
 .courses-grid::before {
@@ -545,15 +546,17 @@ form input[type="submit"] {
   }
 
   .courses-grid {
+    width: 100%;
     margin: 0 auto;
-    grid-template-columns: 450px;
+    grid-template-columns: 1fr;
     justify-content: center;
   }
   .courses-grid::before {
     right: 0;
   }
   .grid-card {
-    margin: 0 30px;
+    padding: 20px;
+    margin: 0 auto;
   }
   .grid-card.multi {
     width: auto;
@@ -606,5 +609,11 @@ form input[type="submit"] {
 
   .social-icons {
     margin-top: 8px;
+  }
+}
+
+@media (max-width: 370px) {
+  html {
+    font-size: 14px;
   }
 }
